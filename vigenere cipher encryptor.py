@@ -92,9 +92,14 @@ def main():  # define main function
         elif input_key.islower() or not input_key.isalpha():
             print(Fore.RED + "\t    [ERROR] Message and Key should be in uppercase letters and should not contain spaces.")
             try_again()
-            
-    # call encrypt function
-    # display cipher text
+
+        # call encrypt function
+        vigenere_cipher = encrypt(input_key, input_message)
+        
+        print(Fore.CYAN + "\t    [Encrypting..............................]")
+        time.sleep(2.5)
+
+        # display cipher text
 
 # call main function
 
