@@ -106,6 +106,7 @@ def main():  # define main function
         try_again()
 
 # call main function
+main()
 
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
