@@ -63,6 +63,10 @@ def encrypt(key, message):
     return ''.join(cipher_text)
 
 # Use pyfiglet formatting to "Lab. Exercise No. 1"
+print("")
+lab = pyfiglet.figlet_format("LAB EXERCISE # 1", font = "banner3-d", width = 141, justify = "center")
+print("\033[1;32m" + lab)
+
 # format introductory message
 
 # insert time delay
