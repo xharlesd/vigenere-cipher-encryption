@@ -75,6 +75,7 @@ print( "\033[1m" + intro_centered)
 print(Fore.GREEN + "\033[1m-" * 140 + '\033[0m')
 
 # insert time delay
+time.sleep(1.5)
 
 # define main function
     # ask the user to input the message and key
