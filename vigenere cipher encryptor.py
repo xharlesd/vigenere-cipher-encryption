@@ -84,8 +84,15 @@ def main():  # define main function
         time.sleep(0.5)
         input_key = input(Fore.GREEN + "\033[1m" + "\t    ENTER KEY \033[0m" + "\033[0;32m(\033[4mALL UPPERCASE LETTERS, NO SPACES\033[0m\033[0;32m) :  " + Fore.YELLOW)
         time.sleep(0.5)
-    
-    # accept only uppercase letters and no spaces
+
+        # accept only uppercase letters and no spaces
+        if input_message.islower() or not input_message.isalpha():
+            print(Fore.RED + "\t    [ERROR] Message and Key should be in uppercase letters and should not contain spaces.")
+            try_again()
+        elif input_key.islower() or not input_key.isalpha():
+            print(Fore.RED + "\t    [ERROR] Message and Key should be in uppercase letters and should not contain spaces.")
+            try_again()
+            
     # call encrypt function
     # display cipher text
 
