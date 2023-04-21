@@ -100,6 +100,10 @@ def main():  # define main function
         time.sleep(2.5)
 
         # display cipher text
+        print(Fore.GREEN + "\033[1m" + "\n\t    CIPHER TEXT: " + "\033[0m" + Fore.YELLOW + vigenere_cipher)
+        print(Fore.CYAN + "\t    [Encryption Successful...................]")
+
+        try_again()
 
 # call main function
 
