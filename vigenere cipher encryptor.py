@@ -39,6 +39,28 @@ def try_again():
 letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 # Create encryption function
+def encrypt(key, message):
+    cipher_text = []
+
+    key_index = 0
+    key = key.upper()
+
+    for char in message: 
+        num = letters.find(char.upper())
+        if num != -1: 
+            num += letters.find(key[key_index])
+            num %= len(letters) 
+
+            if char.isupper():
+                cipher_text.append(letters[num])
+            
+            key_index += 1 
+            if key_index == len(key):
+                key_index = 0
+        else:
+            cipher_text.append(char)
+
+    return ''.join(cipher_text)
 
 # Use pyfiglet formatting to "Lab. Exercise No. 1"
 # format introductory message
