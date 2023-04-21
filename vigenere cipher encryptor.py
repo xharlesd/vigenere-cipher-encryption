@@ -68,6 +68,11 @@ lab = pyfiglet.figlet_format("LAB EXERCISE # 1", font = "banner3-d", width = 141
 print("\033[1;32m" + lab)
 
 # format introductory message
+print(Fore.GREEN + "\033[1m-" * 140 + '\033[0m')
+intro = "THIS ENCRYPTION PROGRAM WILL ACCEPT THE MESSAGE AND KEY FROM USER IN ORDER TO GENERATE CIPHER TEXT USING THE VIGENERE CIPHER." 
+intro_centered = intro.center(140)
+print( "\033[1m" + intro_centered) 
+print(Fore.GREEN + "\033[1m-" * 140 + '\033[0m')
 
 # insert time delay
 
