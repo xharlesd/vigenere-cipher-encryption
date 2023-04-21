@@ -77,8 +77,14 @@ print(Fore.GREEN + "\033[1m-" * 140 + '\033[0m')
 # insert time delay
 time.sleep(1.5)
 
-# define main function
-    # ask the user to input the message and key
+def main():  # define main function
+    while True:
+        # ask user to input the message and key
+        input_message = input(Fore.GREEN + "\033[1m" + "\n\t    ENTER PLAIN TEXT \033[0m" + "\033[0;32m(\033[4mALL UPPERCASE LETTERS, NO SPACES\033[0m\033[0;32m) :  " + Fore.YELLOW)
+        time.sleep(0.5)
+        input_key = input(Fore.GREEN + "\033[1m" + "\t    ENTER KEY \033[0m" + "\033[0;32m(\033[4mALL UPPERCASE LETTERS, NO SPACES\033[0m\033[0;32m) :  " + Fore.YELLOW)
+        time.sleep(0.5)
+    
     # accept only uppercase letters and no spaces
     # call encrypt function
     # display cipher text
