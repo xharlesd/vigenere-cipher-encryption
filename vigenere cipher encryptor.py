@@ -35,9 +35,10 @@ def try_again():
         else:
             print(Fore.RED + "\t    [ERROR] Please choose either YES or NO only.")
 
+# create variable 'letters' that contain A-Z letters
+letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
 # Create encryption function
-    # Loop through each char in message.
-    # Move to the next letter in the key.
 
 # Use pyfiglet formatting to "Lab. Exercise No. 1"
 # format introductory message
